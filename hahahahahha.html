@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>SHI Song's first HTML</title>
+	<meta charset="UTF-8">
+</head>
+
+<!--<style >
+p{
+	color:orange;
+	text-align: center;
+}
+</style>-->
+ 
+ <!--<style>
+.center {
+    text-align: center;
+    color: red;
+}
+</style>-->
+
+<!--<style>
+h1, h2,h3, p {
+    text-align: center;
+    color: orange;
+}
+</style>-->
+
+<style >
+	.ccsdef{
+		color: rgb(2,31,100);
+		text-align: center;
+	}
+	h1 {background-color: #6495ed; }
+
+    h2 {background-color: #e0ffff;border:2px solid pink;padding: 5px}
+
+    h3 {background-color: #b0c4de;margin:30px;}
+
+    a:link {
+    color: orange;
+    background-color: transparent;
+    text-decoration: none;
+    }
+    a:visited {
+    color:blue;
+    background-color: transparent;
+    text-decoration: none;
+    }
+    a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+    a:active {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+    table{
+    	width:100%;
+    	text-align: center;    
+    	border-spacing:2px;
+    }
+    td{
+     padding: 10px;
+     color:blue;
+
+    }
+    th{
+    	padding: 7px;
+    	color: brown;
+    }
+    table#t01 tr{
+    background-color: white;
+}
+    table#t01 td{
+    color: black;
+} 
+    table#t01{
+    	border: 2px; 
+    }
+
+</style>
+
+
+
+<script language="JavaScript">
+function ShowTime(){
+　document.getElementById('demo1').innerHTML = new Date();
+  setTimeout('ShowTime()',1000);
+}
+function xiayitiaohaha(){
+  var image=document.getElementById('xiayitiao');
+  if(image.src.match("E:\study\HTML\sources\nanguadeng.jpg")){
+     image.src="E:\study\HTML\sources\wanshengjie.jpg";
+   }
+   else{
+     image.src="E:\study\HTML\sources\nanguadeng.jpg";
+  }
+}
+function ChangeTheStyle() {
+    var x = document.getElementById("demostyle");
+    x.style.textDecoration= "underline";  
+    x.style.fontSize="26px"         
+    x.style.color = "brown"; 
+}
+function ChangeTheText() {
+    document.getElementById("MP1").innerHTML = "I'm Song SHI";
+    document.getElementById("MP2").innerHTML = "Who are you?";
+    document.getElementById("MP3").innerHTML = "Do you need my help?";   
+}
+</script>
+
+	
+
+
+
+<body onload="ShowTime()" style="background-color:lightblue">
+<!--style="font-family:verdana"-->
+<!--不知道怎么把这些属性并列起来用，也可能是font不能用于HTML5吧-->
+<!--now,我知道怎么用啦，不是逗号是分号呦-->
+
+
+<h1 style="text-align:center;color:yellow;font-family:courier">My First Heading</h1>
+<h2>My Second Heading</h2>
+<h3 style="font-size:200%">My Third Heading,I just change the word size</h3>
+
+<br>
+<p><a href="#P3">Jump to " The third paragraph"</a></p><br/>
+<p><a href="#P12">Jump to "The third paragraph", the start of Javascript></a></p></br>
+<p>这样的话，如果知道怎么上传就可以构建一个包书网啦</p>
+<br>
+
+<p >My first paragraph</p>
+<a href="http://extranet.efrei.fr/" target="_blank">This is a website"EFREI Extrant"</a>
+<br><br/>   <!--加不加<br/>空行不一样什么情况,不是说本来不加但是加比较好检查来着-->
+When you touch the website, it will be open in a new window.<br>
+<br>
+<p>Click the following picture and you will get different new pictures,cute~</p>
+<img src="F:\Moi\pic\Paris.jpg" usemap="#parismap" alt="Life at Paris" width="320" height="1140"> 
+<map name="parismap">
+  <area shape="rect" coords="0,0,320,180" alt="面包" href="http://image.cn.made-in-china.com/4f0j01YKEaHLSdHVol/%E6%B3%95%E5%BC%8F%E9%9D%A2%E5%8C%85%E8%A2%8B.jpg">
+  <area shape="rect" coords="0,190,320,720" alt="建筑" href="http://www.177dj.net/uploads/130509/78-130509132613Y7.jpg">
+  <area shape="rect" coords="0,730,320,900" alt="地铁" href="http://imgsnew.jiatx.com/news/2011_07/20/home/1311156546532_000.jpg">
+  <area shape="rect" coords="0,1140,100,1000" alt="街道" href="http://upload.ecvv.com/upload/Product/201110/China_Paris_Street_Oil_Painting2011102415133610.jpg">
+  <area shape="rect" coords="0,910,320,998" alt="天空" href="http://pic21.nipic.com/20120526/9164782_100718209120_2.jpg">
+  <area shape="rect" coords="100,990,320,1050" alt="天空" href="http://pic21.nipic.com/20120526/9164782_100718209120_2.jpg">
+  <area shape="circle" coords="200,1085,35" alt="树" href="http://cyjctrip.qiniudn.com/14043/1352976518380p17c1quj4e1eiv1n2c10cls271lvh2.jpg">
+</map>
+
+
+
+<p title=" second paragraph's title">
+My second paragraph.<br>
+<b>I just want to write more hahahaha</b><br>
+<i>Because it's a paragraph not a sentance.</i><br>
+<strong>I don't know <sub> why the sentance</sub> <sup>can be</sup><ins> colorful</ins> but it can't work in head.</strong><br>
+H<sub>2</sub>O<br>
+<em>I don't know how to<small> display</small> <mark> Chinese characters</mark> <del>by now </del>TAT</em><br>
+C'est fini~
+</p>
+
+
+<br></br>
+<br></br>
+<br></br>
+<p id="P3">
+My third paragraph
+<hr>
+I just try to use a "hr" as a horizontal rule
+</hr>
+<br>
+yeap~It works.
+<br>I know how to write 中文 now, 哇咔咔~其实是要加上语句“meta charset="UTF-8"”。
+<br>But I don't know why TAT . 
+<br><b>C'est peut-etre 8 chiffres codification</b>
+</p>
+
+<p>
+My forth paragraph.<br>
+This paragraph      contains a lot of     spaces in the source      code, but the browser ignores it. The number of lines in a paragraph depends on the   size of the browser      window. If you      resize the browser window,       the number of lines in this paragraph will      change.
+</p>
+
+<br>
+<br>
+<pre>
+This is my <q>fifth </q>paragraph.
+The element "pre" preserves both line breaks and spaces.
+I just want to see what will happen when a sentance is too long hahaha~ It changes? Break into two lines? Or just hide? 
+哇，这和一般的网页一样，不会自动转行的，Pre的效果原来是这样啊
+</pre>
+
+<br>
+<br>
+<p style="color:orange">
+My sixth paragraph.<br>
+It's colorful wakakakakakaka~<br>
+But I don't know how to make only one sentance instead of the whole paragraph colored<br>
+C'est fini~<br>
+Ohlala~I don't know what does "property" mean Orz
+</p>
+
+<br>
+<br>
+<p>This is my seventh paragraph.</p>
+<blockquote cite="http://www.bilibili.com/">
+	bilibili is a very intresenting website. Many ZHA men watching catoons on it, although I'm not ZHA man, I often watch films and other kinds of video on it.虽然<mark>我现在还不知道blockquote的真实作用</mark>，不过后面会知道的吧，mark~br
+</blockquote>
+
+<br>
+<br>
+<p>
+<blockquote cite="http://www.nipic.com/show/2/27/30a241837b2b3302.html">
+The <abbr name="World Wide Web"> www</abbr>	is a abbr.<br>
+<img src="F:\Moi\pic\sunflower.jpg" alt="Sun Flower" width="415" height="502"><br>
+<cite>SunFlower</cite><sub>向日葵</sub><br>
+This is a very beautiful picture which I like very much.<br>
+</blockquote>
+<bdo dir="rtl">This sentence is from the right to left，bdo是双向命令符呦</bdo><br>
+<ins><mark>I wonder how to make the picture exsit in the middle of the page??</mark></ins>
+</p>
+
+
+<br>
+<br>
+<p>
+This is my ninth prargraph.<br>
+<div align="center">
+ <image src="https://avatars3.githubusercontent.com/u/11554705?v=3&s=96" >
+ <br>
+ now I know how to make picture exist in the middle of the page
+</div>
+
+A paragraph to text smt.<br>
+First,"code":<br>
+<code>
+	var person:{
+	name:"SHI",
+	prenom:"Song",
+	Professor:"etudient"
+	Pay:"Chine"
+	}
+</code><br>
+<code><pre>
+var person:{
+	name:"SHI",
+	prenom:"Song",
+	Professor:"etudient"
+	Pay:"Chine"
+	}	
+</pre></code><br>
+The next one,"kbd":<br>
+Open:<kbd>F:\Moi\pic\</kbd><br>
+The third one:"samp":<br>
+This is a <samp>samp</samp> hahahaha~<br>
+The next one is "var":<br>
+<var>x</var> is an varity,as <var>x=1+y</var><br>
+</p>
+
+
+<br>
+<br>
+<!--[if IE ]>
+<p>I just try to use Conditional commence, which only defines HTML tags to be executed by Internet Explorer.</p>
+<![endif]-->
+<br>
+<p class="ccsdef">
+	This is my tenth prograph.<br>
+	This paragraph I use style ccsdef.<br>
+	It will be success I think~I'm  very happy today that I get into two groups that all of them I like very much :)<br>
+	但是我现在还是不会用<mark> external ccs</mark>，比如这句“link rel="stylesheet" href="styles.css"”TAT,不过我以后会尝试的。<br>
+</p>
+
+<br>
+<br>
+<a href="default.asp">
+  <img src="F:\Moi\pic\shanshuizhongguo.jpg" alt="E:/study/HTML/index.html" style="width:102;height:46;border:0">
+</a>
+
+<br>
+<br>
+<p>Opens the linked document in the full body of the window <a href="http://www.w3schools.com/html/" target="_top">Click here!</a></p>
+
+<br>
+<br>
+<a href="E:\study\XML\TP1\film list.xml" >This is a xml document film list.这是我单机的哇咔咔，真的可以连接耶( •̀ ω •́ )y</a>
+<br>
+<img src="F:\Moi\pic\xiaohuangren.gif" alt="小黄人动图" style="width:240px;height:110px;">
+<br>
+<br>
+<br>
+<p>This is my tenth paragraph.</p>
+<p>下面这个图片是个链接呦哇咔咔，开心，开心~不过现在想知道的是怎么链接数据库之类的</p>
+<a href="https://www.componentsource.com/brand/xamarin?gclid=CjwKEAjw1f6vBRC7tLqO_aih5WISJAAE0CYwSX_1z2F3oHCs8OLNO_PK8dBqrXorXfGdVMOElnvKeRoC8j7w_wcB">
+<img src="https://d13guw8vdzcxca.cloudfront.net/sites/default/files/styles/logo_large/public/images/brand/xamarin/img_446529.png?itok=EC357Sap" alt="https://www.componentsource.com/brand/xamarin?gclid=CjwKEAjw1f6vBRC7tLqO_aih5WISJAAE0CYwSX_1z2F3oHCs8OLNO_PK8dBqrXorXfGdVMOElnvKeRoC8j7w_wcB" style="width:240px;height:142px;">
+</a>
+<p>会引用外面的图片就是这么自信哇咔咔</p>
+<br>
+
+
+<br>
+<br>
+<p>This is my onze paragraph</p>
+<table style="width:100%" border=1px> <!--  border-collapse: collapse;-->
+  <caption style="font-size:200%" >Caption is Name Table</caption>
+  <tr>
+    <th>Name</th>
+    <th>Age</th> 
+    <th>Gender</th>
+  </tr>
+  <tr>
+    <td>SHI Song</td>
+    <td rowspan="3">21</td>		
+    <td>female</td>
+  </tr>
+  <tr>
+   <td>Gtx</td>	
+    <td>male</td>
+  </tr>
+  <tr>
+    <td>Xikaka</td>	
+    <td>female</td>
+  </tr>
+  <tr>
+  	<td>AD630</td>
+  	<td colspan="2">unknown</td>
+  </tr>
+</table>
+
+<table id="t01">
+  <tr>
+    <th>Name</th>
+    <th>Age</th> 
+    <th>Gender</th>
+  </tr>
+  <tr>
+    <td>Elva</td>
+    <td>21</td>		
+    <td rowspan="2">Female</td>
+  </tr>
+  <tr>
+    <td>Sophia</td>
+    <td>20</td>		
+  </tr>
+  <tr>
+    <td>Louis</td>
+    <td rowspan="2">21</td>		
+    <td >Male</td>
+  </tr>
+  <tr>
+    <td>John</td>		
+    <td>Female</td>
+  </tr>
+</table>
+<br/>
+
+<p id="P12">This is my douze paragraph. It's the start of <mark>Javascript</mark></p>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="demo">Javascript can chang the contain of html</p><br/>
+<p id="demo1" style="color:green"></p><br/> 
+
+
+
+<image id="xiayitiao" onclick="xiayitiaohaha()" src="E:\study\HTML\sources\nanguadeng.jpg" width="390",hight="220">
+<p>万圣节是个怎样的节日呢，点图片</p>
+
+
+<p id="demostyle">JavaScript can change the style of an HTML element.</p>
+<button type="button" onclick="ChangeTheStyle()">Click me to change the style of the last line</button>
+<br><br>
+Try to use window.alert
+<button type="button" onclick="window.alert(2333333)">Try it</button>
+<br>
+
+<p id="mydisplay">Try to display sth</p>
+<p id="Annshi">Try to display sth</p>
+<script>
+var x = 99;
+var y = 228;
+var z = x * y;
+var ssfruit = ["Apple","Banana","Pear"];
+z-=y;
+document.getElementById("mydisplay").innerHTML = "Song SHI " + "" + ":" + z + " "+ "like" + " " +  ssfruit[1] ;
+var Annshi ={
+	firstName : "Song",
+	lastName : "SHI",
+	Age: 22,
+	Nation : "Chinese"
+};
+document.getElementById("Annshi").innerHTML = Annshi.firstName + " " + "is far from boring";
+</script>
+
+<br>
+<p id="MP1" style="color:orange">The first Line.</p><br>
+<p id="MP2" style="color:orange">The second Line.</p><br>
+<p id="MP3" style="color:orange">The third Line.</p><br>
+<button type="button" onclick="ChangeTheText()">Click please~</button>
+
+
+
+<br>
+<br>
+<address>
+	Write by SHI Song<br>
+	Connect me at:XXXXXXXXX;<br>
+	Visit me at:XXXXXXXXXXXXXXX;<br>
+	E-mail:XXXXXXXXXXXXXXXXXXXX;<br>
+	FR
+</address>>
+
+
+</body>
+</html>
